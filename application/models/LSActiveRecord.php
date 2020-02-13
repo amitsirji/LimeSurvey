@@ -387,7 +387,7 @@ class LSActiveRecord extends CActiveRecord
     /**
      * Encrypt values before saving to the database
      */
-    public function encryptSave($runValidation=false)
+    public function encryptSave($runValidation=true)
     {
         // run validation on attribute values before encryption take place, it is impossible to validate encrypted values
         if ($runValidation){
